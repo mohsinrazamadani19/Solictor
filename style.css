@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+.body{
+    background-color: black;
+}
+
+.head{
+    width: 100%;
+    height:120vh;
+    border: 1px solid black;
+    background-image: url(./imgaes/hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    justify-content: center;
+    display: flex;
+    position: relative;
+   
+}
+.black{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.384);
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    height: 10vh;
+    margin-top: 6vh;
+    position: relative;
+}
+
+.nav1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+    margin: 0;
+    position: relative;
+}
+.nav1>h1{
+   font-size: 27px;
+   cursor: pointer;
+}
+.item{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+.item>a, .dropdown>button>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 16px;
+    
+}
+
+.dropdown{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown>button{
+    outline: none;
+    border: none;
+}
+
+.item>a:hover{
+    transition: 1s;
+    color: white;
+  
+}
+.fa-phone{
+    margin: 0px;
+    
+
+}
+
+
+.call{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.num{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight:100;
+}
+.nav3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tel{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: rgba(220, 220, 220, 0.452);
+    cursor: pointer;
+}
+
+.tel:hover{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: inherit;
+    border: 2px solid white;
+    transition: 1s;
+}
+
+
+@keyframes aboutanimation{
+    0% {opacity: 0%; margin-top: 20%;}
+    50% {opacity: 50%;}
+    100% {opacity: 100%;}
+
+}
+
+.about{
+    width: 50%;
+    height:fit-content;
+    position: absolute;
+    margin-top: 15vh;
+    margin-left: 110vh;
+    padding: 40px;
+    animation: aboutanimation;
+    animation-duration: 2s;
+}
+.about>h1{
+    font-size: 62px;
+}
+.about>p{
+    font-size: 18px;
+}
+
+.b1{
+    width: 30%;
+    height: 10vh;
+    background-color:rgba(0, 0, 255, 0.507);
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.b1:hover{
+    background-color: darkblue;
+    transition: 1s;
+}
+.b1:active{
+    background-color: rgb(103, 122, 184);
+    color: black;
+}
+
+
+.b2{
+    width: 30%;
+    height: 10vh;
+    border: 1px solid rgb(255, 255, 255);
+    background-color:inherit;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+
+.b2:hover{
+    color: black;
+    background-color: white;
+    transition: 1s;
+    
+}
+.b3{
+    width: 40%;
+    height: 12%;
+    background-color:rgba(0, 0, 255, 0.336);
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.b3:hover{
+    background-color: darkblue;
+    transition: 1s;
+}
+.b3:active{
+    background-color: rgb(103, 122, 184);
+    color: black;
+}
+
+
+.b1:hover{
+    background-color: rgba(0, 0, 139, 0.658);
+    transition: 1s;
+}
+.b1:active{
+    background-color: gray;
+}
+
+.profile{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.profileblack{
+    width: 100%;
+    height: 100vh;
+   background-color: rgb(27,28,30);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.profile1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-top: 1%;
+    padding-left: 8%;
+    position: relative;
+
+}
+.profile1>h1{
+    font-size: 52px;
+}
+
+.profile1>p{
+    font-size: 16px;
+    font-weight: lighter;
+    color: grey;
+}
+
+
+
+.profile2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile2>img{
+    width: 40%;
+    height: 90%;
+    position: absolute;
+}
+
+.profimg1{
+    width: 100%;
+    height: 50%;
+}
+
+.profimg2{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+}		
+
+.our{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(31,32,34);
+    position: relative;
+    
+
+}
+
+.our>h1{
+    font-size: 42px;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.ourmain{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    
+}
+.maincard{
+    width: 30%;
+    height:fit-content;   
+}
+.maincard>p{
+    color: rgba(255, 255, 255, 0.514);
+    font-weight: lighter;
+}
+
+.icon{
+    width: 20%;
+    height: 12vh;
+    border-radius: 35px;
+    background-color: blue;
+    margin: 5px;
+    margin-bottom: 8%;
+}
+
+
+.icon1{
+    width: 80%;
+    position: relative;
+    margin-left: 30px;
+   
+}
+
+.icon1>img{
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.maincard>h2, .maincard>p{
+    padding-left: 8%;
+}
+
+.security{
+    width: 100%;
+    height: 120vh;
+    background-color:rgb(27,28,30) ;
+}
+.security>h1{
+    padding: 40px;
+    font-size:55px;
+}
+.consultant{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   
+   
+}
+
+.consultant1{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.consultant1>img{
+    width: 90%;
+    height: 80%;
+}
+.consultant2{
+    width: 50%;
+    height: 100%;
+    align-items:flex-start;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+}
+.consultant2>h1{
+    margin: 10px;
+    font-size: 38px;
+    font-weight: lighter;
+    
+}
+.consultant2>p{
+    margin: 10px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.315);
+}
+.consultant2>button{
+    margin: 10px;
+    width: 180px;
+    height: 50px;
+}
+
+.tabed{
+    width: 100%;
+    height: 120vh;
+    background-color:rgb(27,28,30) ;
+}
+
+
+.maintabs{
+    width: 100%;
+    height:auto;
+    background-color:rgb(27,28,30) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-top: 10vh;
+}
+
+.tabs--radio{
+    display: none;
+}
+
+.tabs--label{
+    cursor: pointer;
+    font-weight: bold;
+    font-size:16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.tabcontent{
+    order: 1;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.insv1{
+    width: 40%;
+    height: 100%;
+    padding: 5%;
+    padding-left: 10%;
+}
+.insv1>h1{
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.insv1>p{
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.301);
+}
+
+.invs2{
+    width: 60%;
+    height: 100%;
+    padding: 5%;
+}
+.invs2>img{
+    width: 100%;
+}
+
+.tabs--radio:checked+.tabs--label{
+    font-weight: bold;
+    font-size:16px;
+    color: white;
+    border-bottom: 3px solid white;
+ 
+}
+
+.tabs--radio:checked+.tabs--label+.tabcontent{
+    display: initial;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.read{
+    width: 40%;
+    height: 15%;
+    background-color:rgba(0, 0, 255, 0.507);
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.read:active{
+    background-color: rgb(103, 122, 184);
+    color: black;
+}
+
+.practicearea{
+    width: 100%;
+    height: 130vh;
+    background-color:rgb(27,28,30) ;
+   
+}
+
+.practiceareamain{
+    background-color: inherit;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(27,28,30) ;
+    height: 100%;
+    
+    
+}
+
+
+
+.practicearea>h1{
+    padding: 5%;
+    font-size: 52px;
+    padding-left: 10%;
+}
+
+.practicearea1{
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 1%;
+    color: rgba(255, 255, 255, 0.493);
+    cursor: pointer;
+    background-color: black;
+}
+.practicearea1>h5{
+    margin-left: 10%;
+    color: white;
+}
+.practicearea1>span{
+    margin-top: 35%;
+    margin-right: 10%;
+    position: relative;
+}
+.practicearea1:hover{
+    background-color: blue;
+}
